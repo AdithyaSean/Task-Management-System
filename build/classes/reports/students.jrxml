@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="865f8ca2-29f5-4950-8e72-4f836d7ac3ef">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM students]]>
+	</queryString>
+	<field name="username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="first_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="last_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stream" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="grade" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="full_marks" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="grade">
+		<groupExpression><![CDATA[$F{grade}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="96" splitType="Stretch">
+			<staticText>
+				<reportElement x="89" y="0" width="377" height="96" uuid="5ba37b32-a608-4d29-8c23-682eaa2ebdf2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Susamayawardana College]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="89" height="96" uuid="7906b607-59dc-4d5b-bf31-7a0533ed9b9c"/>
+				<imageExpression><![CDATA["C:\\Users\\adith\\My Drive\\NIBM\\DSE\\EAD\\Project\\TaskManagementSystem\\resources\\icons\\icon.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="35" uuid="43dc77ce-a7db-46cd-af9e-f8ac103a40cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Students Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="92" height="20" uuid="8b824ac1-a847-426b-99ca-ebb15c3d27ba"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="0" width="92" height="20" uuid="88776157-322d-4e2d-8c0e-20890d225bf1"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[first name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="0" width="92" height="20" uuid="453d6427-941d-4ca0-98c7-bb56985199f1"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[last name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="92" height="20" uuid="90627866-bc8d-48d6-be91-c8bff731921e"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[stream]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="0" width="92" height="20" uuid="e5c99769-26eb-4b24-9f44-9599664dae2a"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[grade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="92" height="20" uuid="c89730ea-34ca-4287-a0e3-194d52c7e3df"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[full marks]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="355" y="1" width="13" height="19" uuid="c2b01894-ef5f-4690-a369-baee5c4d8114"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="447" y="0" width="13" height="19" uuid="620943fc-13b4-4ecb-a4d3-c3658084f823"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="539" y="1" width="13" height="19" uuid="54457a2d-0be2-4f9b-b05a-d570231f6534"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="78" y="0" width="14" height="18" uuid="4a9d3303-1ce1-4e14-a9f3-c01febf40a5b"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="171" y="2" width="13" height="17" uuid="ff43e3bd-ca01-4a2e-aa97-45d7807bd092"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="265" y="0" width="11" height="20" uuid="a6bed808-2088-45a0-a627-9f74a2e0dc7c"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="92" height="20" uuid="ecd0416a-9178-4b8f-9191-916fedb717f0"/>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="0" width="92" height="20" uuid="e1d425ec-f6d1-46b4-be78-399c329ca059"/>
+				<textFieldExpression><![CDATA[$F{first_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="0" width="92" height="20" uuid="b632bc81-ae30-49f8-8e43-5c94f9600806"/>
+				<textFieldExpression><![CDATA[$F{last_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="92" height="20" uuid="16e50f20-345f-4536-844f-a1cf9e4666c6"/>
+				<textFieldExpression><![CDATA[$F{stream}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="368" y="0" width="92" height="20" uuid="641d15c2-430b-4073-ba63-03ca147fdcec"/>
+				<textFieldExpression><![CDATA[$F{grade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="92" height="20" uuid="1b850957-a7e5-491c-b080-739dd8cf7cea"/>
+				<textFieldExpression><![CDATA[$F{full_marks}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="54" uuid="548ef09e-02d3-46a2-a7e0-5ce44c8baae8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0f30d9f3-8250-404b-83f6-b3d9870b1cdd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="15"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM tasks]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="issued_by" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="task" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="details" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="deadline" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stream" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="done_by" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="marks" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="status">
+		<groupExpression><![CDATA[$F{status}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="96" splitType="Stretch">
+			<staticText>
+				<reportElement x="89" y="0" width="377" height="96" uuid="fbf2eef1-3ee8-49df-b95c-e795cc10f69c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Susamayawardana College]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="89" height="96" uuid="5d395ad4-e28e-495d-ae33-c61075bcd859"/>
+				<imageExpression><![CDATA["C:\\Users\\adith\\My Drive\\NIBM\\DSE\\EAD\\Project\\TaskManagementSystem\\resources\\icons\\icon.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="35" uuid="daa768d9-8b49-471c-b737-6a421fe84568"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teachers Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="61" height="20" uuid="eb084011-3241-4abc-9494-e2eeac883607"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="0" width="61" height="20" uuid="d93036b9-1d1c-4822-8b22-9d2e5d18943d"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[issued by]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="0" width="61" height="20" uuid="67108453-1062-4807-ba68-173729c95a45"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="0" width="61" height="20" uuid="6b492403-6ddb-48fb-8c02-a6b10bf0ccc7"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[task]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="244" y="0" width="61" height="20" uuid="c4d942a4-e31b-44d2-bc62-3ba76c5bd7e5"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[details]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="0" width="61" height="20" uuid="1bb7b7eb-9abe-40cf-a6d9-f0ca81cc821c"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[deadline]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="0" width="61" height="20" uuid="36a108f6-f55c-4e62-a31e-cd8140efcedb"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[stream]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="0" width="61" height="20" uuid="18b29c2e-8f86-4443-92a0-ca5abcea50b1"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[done by]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="488" y="0" width="61" height="20" uuid="e1f3c8d4-a10d-4c57-aa8c-4a36e8ecbc5d"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[marks]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="49" y="0" width="12" height="20" uuid="e27e91ab-2fbd-4606-8481-1baef3f97cb8"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="355" y="0" width="11" height="20" uuid="1cbd3934-5bdb-43ee-ab5b-4ca31055af77"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="170" y="0" width="13" height="20" uuid="b516393f-fd12-40b7-a532-fc6b0f315c4a"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="539" y="0" width="10" height="20" uuid="f21397e7-2c16-4b12-ac1d-ca36c7e68885"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="112" y="0" width="10" height="20" uuid="23b94037-a640-4ad1-91f0-8b13f4b78dbd"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="294" y="0" width="11" height="20" uuid="44629f49-e685-40ea-95e6-fb5f595f71e6"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="478" y="0" width="10" height="20" uuid="45a07ca6-a41a-4698-83d2-3b271c37ea90"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+			<componentElement>
+				<reportElement x="234" y="0" width="10" height="20" uuid="4e3e4c36-1dea-418d-b962-01a7b7f0c7cc"/>
+				<sr:sort xmlns:sr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<sr:symbol handlerColor="#000000" sortFieldType="Field" handlerHorizontalAlign="Center" handlerVerticalAlign="Middle"/>
+				</sr:sort>
+			</componentElement>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="61" height="20" uuid="826672d7-0541-4962-a2fd-776206f0b2b6"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="61" y="0" width="61" height="20" uuid="0f000bd7-0118-4da1-9837-373fed90cd87"/>
+				<textFieldExpression><![CDATA[$F{issued_by}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="0" width="61" height="20" uuid="3cd85c23-8fc4-4602-9289-bd8ff6285bb8"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="0" width="61" height="20" uuid="3c27186e-63d9-46a7-85b3-db7f2120d195"/>
+				<textFieldExpression><![CDATA[$F{task}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="0" width="61" height="20" uuid="dc361c9d-9970-437a-8780-34743e0f6237"/>
+				<textFieldExpression><![CDATA[$F{details}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="0" width="61" height="20" uuid="168ec37d-457a-4abd-9ce1-eb0152cdf7de"/>
+				<textFieldExpression><![CDATA[$F{deadline}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="366" y="0" width="61" height="20" uuid="ace5ffc4-1fd4-4f6f-bc26-26feab101037"/>
+				<textFieldExpression><![CDATA[$F{stream}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="0" width="61" height="20" uuid="3ef5582c-07fc-41e6-a798-4f640d590b8d"/>
+				<textFieldExpression><![CDATA[$F{done_by}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="488" y="0" width="61" height="20" uuid="92d99b8c-f2ad-40a0-902f-8558348f78ff"/>
+				<textFieldExpression><![CDATA[$F{marks}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="54" uuid="ed5877f3-99a3-4d35-907d-40cc06801e9e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
